@@ -89,7 +89,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  /* border: 0; */
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -139,7 +139,7 @@ a {
 }
 * {
   box-sizing: border-box;
-  /* border: 2px solid gray; */
+  border: 2px solid gray;
 }
 html {
   font-size: 62.5%;
@@ -237,4 +237,46 @@ p {
   height: 100%;
   border-radius: 0px 10px 10px 0px;
   filter: contrast(1.5);
+}
+
+@media (max-width: 375px) {
+  .main--div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+  }
+
+  .information {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 3rem;
+    width: 90%;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+  }
+
+  .stats > * {
+    width: 60%;
+  }
+
+  .image {
+    width: 100%;
+    order: -1;
+    height: 45%;
+  }
 }
